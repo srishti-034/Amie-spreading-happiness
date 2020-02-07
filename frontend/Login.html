@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>User Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+ <title>form</title>
+ <script>
+   function validate()
+   {
+   	   var uname=document.getElementById("tb1").value;
+   	   var pwd=document.getElementById("tb1").value;
+   	   if(uname.trim()=="" || pwd=="")
+   	     { 
+            alert("please enter a valid username and password");
+   	     	 return false;
+	   	 }
+   	   else if(pwd.length<6)
+   	   {
+   	   	 alert("password must be atleast six characters long");
+   	   	 return false;
+   	   }
+   	   else
+   	   {
+   	   	alert("form submitted!!");
+   	   	return true;
+   	   }
+   }
+ </script>
+</head>
+<body>
+  <h1>Form</h1>
+ <form onsubmit="return validate();" action="list.html">
+    <input type="text" name="username" placeholder="username" id="tb1">  <br>
+    <input type="password"  name="pwd" placeholder="password" id="tb2">  <br>
+    <button id="btn" name="submit">Submit</button>
+ </form>
+</body>
+</html>
