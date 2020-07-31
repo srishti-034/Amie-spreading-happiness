@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+    <script type='text/javascript' src="coverp.js"></script>
+<style>
+    h1{
+        font-family: "monospace";
+        font-size: 200px;
+    }
+    p{
+        font-family: monospace;
+        font-size: 150px;
+    }
+   
+   
+    </style>
+</head>
+
+<body>
+
+<!--<img src="https://s30876.pcdn.co/wp-content/uploads/GettyImages-1070828464-1170x630.jpg" heigt="900" width="900">-->
+   <div class="w3-panel w3-card-4 jumbotron jumbotron-fluid" style="background-color: #ffd1b3;">
+  <div class="container">
+      <img src="images/logo2.png" height="200" width="200">
+   <div class=text>   
+    <h1 class="display-4">AMIE</h1>
+    <p class="lead">Spreading Happiness</p>
+  </div>
+</div>
+    </div>
+                            
+<div>
+<button type="button" onclick="document.getElementById('id02').style.display='block'" class="btn btn-default btn-lg btn-block w3-card-4" style="background-color: #ccccff;">Sign Up</button>
+<button type="button" onclick="document.getElementById('id01').style.display='block'" class="btn btn-default btn-lg btn-block w3-card-4" style="background-color: #ccccff">Login</button>
+                
+                                            <!--SIGN UP PAGE-->
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+        <img src="https://www.allthetests.com/quiz22/picture/pic_1171831236_1.png" alt="Avatar" height="100" width="100"  class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="feed_page.html" onSubmit = "return checkPassword(this)">
+        <div class="w3-section">
+            <label><b>Name</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Name" name="usrname" required>
+            <label><b>Age</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Age" name="usrname" required>
+            <label><b>Gender</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Male/Female" name="usrname" required>
+          <label><b>Email</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+            <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw1" required>
+          <br><label><b>Repeat Password</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Confirm Password" name="psw2" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Create My Account</button>
+        </div>
+        </form>
+
+    </div>
+  </div>
+</div>
+    
+                                        <!--    LOGIN PAGE-->
+            
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+        <img src="https://cdn4.iconfinder.com/data/icons/professional-avatar-5/48/seo_manager_avatar_women_woman_profile_character_professions_2-512.png" alt="Avatar" height="120" width="120"  class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="feed_page.html">
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+
+    </div>
+  
+</div>
+            
+</body>
+</html>

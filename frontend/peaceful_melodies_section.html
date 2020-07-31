@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Peaceful Melodies Section</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-deep-orange.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+    .w3-tangerine {
+      font-family: "Tangerine", serif;
+    }
+</style>
+<body>
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+<div class="w3-container w3-theme-d2">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+  <br>
+  <div class="w3-padding w3-center">
+    <img class="w3-circle" src="images/logo.png" alt="logo" style="width:100px; height:100px;">
+  </div>
+</div>
+<a class="w3-bar-item w3-button" href="#">favorites</a>
+<a class="w3-bar-item w3-button" href="#">link2</a>
+<a class="w3-bar-item w3-button" href="#">link3</a>
+</nav>
+
+<header class="w3-top w3-bar w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+  <h1 class="w3-bar-item">app name</h1>
+</header>
+<div class="w3-container w3-tangerine" style="margin-top:90px">
+  <div class="w3-panel w3-card-4">
+    <h2 class="w3-tangerine w3-jumbo">Relaxing Music</h2>
+    <p style="font-family: monospace; font-size: 20px;">Calming music promotes peace and relaxation, reduces stress and helps to induce sleep.<br>
+       Nature sounds and instrumental music is the best healer.
+    </p>
+    <div class="w3-container">
+        <div class="w3-panel w3-card-4 w3-round-xlarge" style="background-color:#ffd1b3; ">
+            <p class="w3-xxlarge">Title : "An Ambient Day"</p>
+            <audio controls style="width: 1000px;">
+                <source src="sounds/relax1.mp3" type="audio/mpeg">
+                    browser does not support the audio element.
+            </audio>
+        </div>  
+        <div class="w3-panel w3-card-4 w3-round-xlarge" style="background-color:#ffd1b3;">
+            <p class="w3-xxlarge">Title : "The Quiet Morning"</p>
+            <audio controls style="width: 1000px;">
+                <source src="sounds/relax2.mp3" type="audio/mpeg">
+                    browser does not support the audio element.
+            </audio>
+        </div>  
+        <div class="w3-panel w3-card-4 w3-round-xlarge" style="background-color:#ffd1b3;">
+            <p class="w3-xxlarge">Title : "Quiet Time"</p>
+            <audio controls style="width: 1000px;">
+                <source src="sounds/relax3.mp3" type="audio/mpeg">
+                    browser does not support the audio element.
+            </audio>
+        </div>  
+        <div class="w3-panel w3-card-4 w3-round-xlarge" style="background-color:#ffd1b3;">
+            <p class="w3-xxlarge">Title : "Cheerful"</p>
+            <audio controls style="width: 1000px;">
+                <source src="sounds/relax4.mp3" type="audio/mpeg">
+                    browser does not support the audio element.
+            </audio>
+        </div>  
+    </div>
+</div>
+<div id="tab2" class="w3-container w3-tangerine">
+        <div class="w3-panel w3-card-4">
+            <h2 class="w3-tangerine w3-jumbo">Meditation Music</h2>
+            <p style="font-family: monospace; font-size: 20px;">Combining music with meditation can deepen the positive effects of both, and bring you greater stress relief.</p>
+            <div class="w3-container">
+                <div class="w3-panel w3-card-4 w3-round-xlarge" style="background-color:#ffd1b3; ">
+                    <p class="w3-xxlarge">Title : "Om"</p>
+                    <audio controls style="width: 1000px;">
+                        <source src="sounds/meditation1.mp3" type="audio/mpeg">
+                            browser does not support the audio element.
+                    </audio>
+                </div>  
+                <div class="w3-panel w3-card-4 w3-round-xlarge" style="background-color:#ffd1b3;">
+                    <p class="w3-xxlarge">Title : "Running Water"</p>
+                    <audio controls style="width: 1000px;">
+                        <source src="sounds/meditation2.mp3" type="audio/mpeg">
+                            browser does not support the audio element.
+                    </audio>
+                </div>  
+                <div class="w3-panel w3-card-4 w3-round-xlarge" style="background-color:#ffd1b3;">
+                    <p class="w3-xxlarge">Title : "Light"</p>
+                    <audio controls style="width: 1000px;">
+                        <source src="sounds/meditation3.mp3" type="audio/mpeg">
+                            browser does not support the audio element.
+                    </audio>
+                </div>  
+            </div>
+        </div>
+</div>
+<div id="tab2" class="w3-container w3-tangerine">
+    <div class="w3-panel w3-card-4">
+        <h2 class="w3-tangerine w3-jumbo">Fun Music</h2>
+        <p style="font-family: monospace; font-size: 20px;">Music Therapy promotes emotional health</p>
+        <div class="w3-container">
+            <div class="w3-panel w3-card-4 w3-round-xlarge" style="background-color:#ffd1b3; ">
+                <p class="w3-xxlarge">Title : "The Biggest Smile"</p>
+                <audio controls style="width: 1000px;">
+                    <source src="sounds/fun1.mp3" type="audio/mpeg">
+                        browser does not support the audio element.
+                </audio>
+            </div>  
+            <div class="w3-panel w3-card-4 w3-round-xlarge" style="background-color:#ffd1b3;">
+                <p class="w3-xxlarge">Title : "Eye Laugh"</p>
+                <audio controls style="width: 1000px;">
+                    <source src="sounds/fun2.mp3" type="audio/mpeg">
+                        browser does not support the audio element.
+                </audio>
+            </div>  
+            <div class="w3-panel w3-card-4 w3-round-xlarge" style="background-color:#ffd1b3;">
+                <p class="w3-xxlarge">Title : "Positive and Fun"</p>
+                <audio controls style="width: 1000px;">
+                    <source src="sounds/fun3.mp3" type="audio/mpeg">
+                        browser does not support the audio element.
+                </audio>
+            </div>  
+        </div>
+    </div>
+</div>
+    <br>
+<footer class="w3-container w3-bottom w3-theme w3-margin-top">
+  <h3>Footer (We can put information about today's mood and to-do tasks icon here)</h3>
+</footer>
+
+<script>
+closeSidebar();
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+</script>
+
+</body>
